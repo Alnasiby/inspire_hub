@@ -63,3 +63,86 @@
         transform: scale(1);
     }
 }
+/* 🎯 Goal Tracker Page Styles */
+.goal-tracker-body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-align: center;
+}
+
+.goal-tracker-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.goal-tracker-container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.goal-tracker-container input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.goal-tracker-container button {
+    background: #ffcc00;
+    color: #0e0101;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.goal-tracker-container button:hover {
+    background: #ffdb4d;
+}
+
+#goalList {
+    list-style: none;
+    padding: 0;
+}
+
+#goalList li {
+    background: #f3f3f3;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
