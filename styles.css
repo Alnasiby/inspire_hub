@@ -63,6 +63,7 @@
         transform: scale(1);
     }
 }
+
 /* 🎯 Goal Tracker Page Styles */
 .goal-tracker-body {
     font-family: 'Poppins', sans-serif;
@@ -83,7 +84,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     width: 80%;
     max-width: 500px;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .goal-tracker-container h1 {
