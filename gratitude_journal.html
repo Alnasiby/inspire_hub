@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitude Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gratitude-body">
+    <div class="gratitude-container">
+        <h1>🙏 Gratitude Journal 🙏</h1>
+        <p>Write down things you are grateful for today!</p>
+        <textarea id="gratitudeInput" placeholder="I'm grateful for..."></textarea>
+        <button onclick="saveGratitude()">💖 Save Entry</button>
+        <button onclick="goBack()">🔙 Go Back</button>
+        <ul id="gratitudeList"></ul>
+    </div>
+
+    <script src="gratitude_journal.js"></script>
+</body>
+</html>

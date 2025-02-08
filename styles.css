@@ -146,3 +146,82 @@
     cursor: pointer;
     border-radius: 3px;
 }
+/* 🙏 Gratitude Journal Page Styles */
+.gratitude-body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    text-align: center;
+}
+
+.gratitude-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+.gratitude-container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.gratitude-container textarea {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.gratitude-container button {
+    background: #ffcc00;
+    color: #0e0101;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gratitude-container button:hover {
+    background: #ffdb4d;
+}
+
+#gratitudeList {
+    list-style: none;
+    padding: 0;
+}
+
+#gratitudeList li {
+    background: #f3f3f3;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
