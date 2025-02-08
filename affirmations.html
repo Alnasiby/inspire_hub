@@ -6,12 +6,28 @@
     <title>Daily Affirmations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>🌟 Daily Affirmations 🌟</h1>
-    <p>Believe in yourself. You are stronger than you think!</p>
-    <button onclick="goBack()">🔙 Go Back</button>
+<body class="affirmation-body">
+    <div class="affirmation-container">
+        <h1>🌟 Daily Affirmations 🌟</h1>
+        <p id="affirmation-text">"Believe in yourself. You are stronger than you think!"</p>
+        <button onclick="newAffirmation()">✨ New Affirmation</button>
+        <button onclick="goBack()">🔙 Go Back</button>
+    </div>
 
     <script>
+        const affirmations = [
+            "You are capable of amazing things! ✨",
+            "Believe in yourself and your dreams! 🌟",
+            "Every day is a new beginning. 🌈",
+            "You are worthy of happiness and success! 💖",
+            "Stay positive, work hard, and make it happen! 🚀"
+        ];
+
+        function newAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            document.getElementById('affirmation-text').innerText = affirmations[randomIndex];
+        }
+
         function goBack() {
             window.location.href = "index.html";
         }
